@@ -1,0 +1,128 @@
+.search-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: #f5f5f5;
+  }
+  
+  .search-box {
+    width: 100%;
+    max-width: 800px;
+    background: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .search-box h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #333;
+    font-size: 2rem;
+  }
+  
+  .input-wrapper {
+    position: relative;
+    margin-bottom: 1rem;
+  }
+  
+  .search-icon {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666;
+    width: 20px;
+    height: 20px;
+  }
+  
+  .search-input {
+    width: 100%;
+    padding: 1rem 1rem 1rem 3rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  .search-input:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  
+  .search-button {
+    width: 100%;
+    padding: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .search-button:hover:not(:disabled) {
+    background-color: #0056b3;
+  }
+  
+  .search-button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  .error-message {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #ff4444;
+    color: white;
+    border-radius: 0.5rem;
+    text-align: center;
+  }
+  
+  .results-container {
+    margin-top: 2rem;
+  }
+  
+  .result-card {
+    padding: 1rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .result-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .result-card h3 {
+    margin: 0 0 0.5rem 0;
+  }
+  
+  .result-card a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .result-card a:hover {
+    text-decoration: underline;
+  }
+  
+  .result-card p {
+    margin: 0 0 0.5rem 0;
+    color: #666;
+  }
+  
+  .position {
+    font-size: 0.875rem;
+    color: #999;
+  }
+  
